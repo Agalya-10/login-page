@@ -11,21 +11,22 @@
     <form action="" id="form">  
         <h1 class="head">Login page</h1>
         <div class="input-type">
-            <label for="" id="username">Username</label>
-            <input type="text" placeholder="Username" name="username" id="username">
-            <div class="error"></div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" id="userName">
+            <div id="nameError"></div>
         </div>
         <div class="input-type">
-            <label for="" id="Email">Email</label>
+            <label for="email">Email</label>
             <input type="text" placeholder="Email" name="email" id="email">
-            <div class="error"></div>
+            <div id="emailError"></div>
         </div>
-        <div class="input-type floating">
-            <label for="" id="password">Password</label>
+        <div class="input-type ">
+            <label for="password">Password</label>
             <input type="password" placeholder="Password" name="password" id="password">
-            <div class="error"></div>
+            <div id="passwordError"></div>
         </div>
-       <button class="submit">Login</button>
+        <p id="submit"></p>
+       <button onclick="MyButton(event)">Login</button>
     </form>
 </div>
     
