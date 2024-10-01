@@ -4,7 +4,7 @@
 }
 body{
     /* background: linear-gradient(40deg, #878cce, #a675be); */
-background-color: black;
+/* background-color: black; */
 }
 
 #form{
@@ -13,6 +13,7 @@ background-color: black;
     width: 350px;
     margin: 15vh auto;
     border-radius: 10px;
+    /* box-shadow: 10px 30px; */
 }
 .head{
     text-align: center;
@@ -30,7 +31,7 @@ background-color: black;
     font-weight: 600;
 
 }
-#submit{
+.submit{
     padding: 5px 10px;
     margin:10px 0;
     cursor: pointer;
@@ -40,7 +41,7 @@ background-color: black;
     width: 30%;
     margin-left: 7rem;
 }
-#submit:hover{
+.submit:hover{
     background-color: green;
     color: white;
     border: 1px solid green;
