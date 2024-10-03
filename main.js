@@ -1,47 +1,58 @@
-// var form = document.getElementById('form').value;
-// let userName=document.getElementById('userName').value;
-// let email=document.getElementById('email').value;
-// let password=document.getElementById('password').value;
-// var nameError = document.getElementById('nameError').value;
-// var emailError = document.getElementById('emailError').value;
-// var passwordError = document.getElementById('passwordError').value;
 
+function MyButton(event) {
+  event.preventDefault(); // Prevent default form submission
 
-function MyButton(event){
-    event.preventDefault()
+  // Get values from input fields
+  let userName = document.getElementById('userName').value;
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
 
-  // let user=[]
-   
-   let userName=document.getElementById('userName').value;
-   let email=document.getElementById('email').value;
-   let password=document.getElementById('password').value;
-  //  let errorMessages = ''
+  // Get error message elements
+  let nameError = document.getElementById('nameError');
+  let emailError = document.getElementById('emailError');
+  let passwordError = document.getElementById('passwordError');
 
-    console.log(userName)   
-    console.log(email)
-    console.log(password)
+  let valid = true;
 
-    let resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `
-        <h2>User Details</h2>
-        <p><strong>Username:</strong> ${userName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Password:</strong> ${password}</p>`;
+  // Validation
+  if (userName.trim() === "") {
+      nameError.textContent = "Username is required*";
+      nameError.style.color = "red";
+      valid = false;
+  } else {
+      nameError.textContent = '';
+  }
 
+  if (email.trim() === "") {
+      emailError.textContent = "Email is required*";
+      emailError.style.color = "red";
+      valid = false;
+  } else {
+      emailError.textContent = '';
+  }
+
+  if (password.trim() === "") {
+      passwordError.textContent = "Password is required*";
+      passwordError.style.color = "red";
+      valid = false;
+  } else {
+      passwordError.textContent = '';
+  }
+
+  // If valid, log to console and reset
+  if (valid) {
+      console.log("Username:", userName);
+      console.log("Email:", email);
+      console.log("Password:", password);
+
+      let resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `
+          <h2>User Details</h2>
+          <p><strong>Username:</strong> ${userName}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Password:</strong> ${password}</p>`;
+
+      // Reset the form after logging data
+      document.getElementById('form').reset();
+  }
 }
-//    form.addEventListener('submit',(e)=>{
-//     e.preventDefault()
-
-// if(userName !== ""){
-//   nameError.innerHTML = '' ;      
-//  }
-//  else if(userName === ""){
-//   nameError.innerHTML = 'Username is Not Required*';
-//   nameError.style.color = "red";
-//   nameError.style.fontsize ="12px"
-
-  
-//  }
-// })
-
-
