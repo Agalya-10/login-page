@@ -3,16 +3,18 @@
     margin: 0;
 }
 body{
-    /* background: linear-gradient(60deg, #10ac8a, #f50fce); */
+    /* background: linear-gradient(40deg, pink,skyblue); */
         /* background-color: #000000;  */
 }
 #form{
     background-color:white;
     width: 400px;
-    margin: 7vh auto;
+    margin: 3vh auto;
+    /* background: linear-gradient(40deg, pink,skyblue); */
+
 }
 .para{
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     /* align-items: center; */
 } 
@@ -21,6 +23,7 @@ body{
     font-size: 18px;
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
 } 
 .input-type label{
     font-weight: 500;
@@ -32,39 +35,92 @@ body{
     cursor: pointer;
     font-size: 17px;
     border-radius: 10px;
-    background-color: rgb(206, 198, 198);
+    background-color:whitesmoke;
     width: 25%;
     margin-left: 9rem;
     font-weight: 600;
 }
 .submit:hover{
-    background-color: green;
+    background-color: hsl(340, 97%, 45%);
     color: white;
 }
 .input-type input{
-    padding: 10px;
+    padding: 10px 7rem 10px 10px;
     margin: 7px ;
     border-radius: 7px;
     font-size: 15px;
 }
 .pass{
     text-decoration: none;
-    /* text-align: end; */
     font-size: 13px;
-    /* font-weight: bold; */
-    color: #640444;
-    /* margin-left: 10px; */
+    /* color: #640444; */
+    margin-left: 7.5rem;
+    color:hsl(340, 97%, 45%); 
+
 }
-.pass1{
+
+ .password1{
     text-decoration: none;
-    /* text-align: start; */
     font-size: 13px;
-    color: #640444;
+    /* color:hsl(340, 97%, 45%);  */
 
-}
-
+ }
 .icons{
     text-align: center;
-    margin: 20px 0px;
-  
+    /* margin: 10px 0px; */
+
 }
+#icon1{
+    color: rgb(241, 121, 7);
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 60px;
+
+}
+#icon2{
+    color: rgb(13, 124, 168);
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 60px;
+}
+#icon3{
+    color: rgb(211, 11, 134);
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 60px;
+}
+.insert-icon {
+    position: relative;
+    /* width: fit-content; */
+}
+
+.insert-icon i {
+    position: absolute;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color:hsl(340, 97%, 45%); 
+}
+
+.insert-icon input {
+    padding-left: 30px; 
+}
+.table1{
+    display: flex;
+    justify-content: center;
+}
+table,td,tr,th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 0.8rem;
+}
+th{
+    padding: 1rem 2rem;
+    /* text-align: center; */
+
+}
+td{
+    /* text-align: center; */
+}
+

@@ -45,13 +45,18 @@ function MyButton(event) {
       console.log("Email:", email);
       console.log("Password:", password);
 
-      let resultDiv = document.getElementById('result');
-      resultDiv.innerHTML = `
-          <h2>User Details</h2>
-          <p><strong>Username:</strong> ${userName}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Password:</strong> ${password}</p>`;
-
+      let resultDiv = document.getElementById('table2');
+      resultDiv= `
+      <tr>
+      <td>${userName}</td>
+      <td>${email}</td>
+      <td>${password}</td>
+      <td>
+      <button class="btn bg-success save-btn">Save</button>
+      <button class="btn bg-danger cancel-btn">Cancel</button>
+      </td>
+      </tr>`
+      table2.innerHTML += resultDiv;
       // Reset the form after logging data
       document.getElementById('form').reset();
   }

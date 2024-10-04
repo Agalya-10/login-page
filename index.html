@@ -14,38 +14,65 @@
     <div class="container">
     <form action="" id="form" class="shadow">  
         <!-- <h2 class="head">Login page</h2> -->
-        <img class="" style="height: 80px; width: 80px;margin-left: 10rem;" src="images/business_logo.png">
+        <img class="" style="height: 90px; width: 90px;margin-left: 10rem;" src="images/business_logo.png">
         <p class="para">Welcome Back!Login to your Account.</p>
         <div class="input-type">
             <label for="username">Username</label>
-            <input type="text" class="shadow" placeholder="Enter your Username" name="username" id="userName">
+            <div class="insert-icon">
+            <i class='bx bxs-user'></i>
+            <input type="text" class="shadow" placeholder="Enter your Username"  name="username" id="userName">
+            </div>
             <div id="nameError"></div>
         </div>
         <div class="input-type">
             <label for="email">Email</label>
+            <div class="insert-icon">
+            <i class='bx bxs-envelope'></i>
             <input type="text" class="shadow" placeholder="Enter your Email Address" name="email" id="email">
-            <!-- <div<i class='bx bxs-envelope'></i> -->
+            </div>
             <div id="emailError"></div>
         </div>
         <div class="input-type ">
             <label for="password">Password</label>
+            <div class="insert-icon" >
+                <i class='bx bxs-virus-block'></i>
             <input type="password" class="shadow" placeholder="Enter your Password" name="password" id="password">
-            <div class="eg" style="justify-content: space-between;">
-            <a class="pass1" href="">Remember me</a>
+            </div>
+            <div class="password1">
+            <input type="radio" style="font-size: 0px;" class="pass1">Remember me
             <a class="pass" href="">Reset Password!</a>
             </div>
             <div id="passwordError"></div>
         </div>
        <button class="submit" onclick="MyButton(event)">Login</button><br>
+       <div class="d-flex justify-content-center">
+        <div class="line mt-4" style="width: 100%; max-width:8rem;height: 0%; border: 0.2px solid;border-radius: 4px;color: rgb(194, 189, 189)"></div>
+        <p class=" mx-2 mt-2" >or</p>
+        <div class="line mt-4" style="width: 100%;max-width:8rem;height: 0%; border: 0.2px solid;border-radius: 4px;color: rgb(194, 189, 189)"></div>
+    </div>
        <div class=" icons fs-3 ">
-       <i class='bx bxl-google'id="icon"></i>
-       <i class='bx bxl-facebook'id="icon"></i>
-       <i class='bx bxl-instagram-alt'id="icon"></i>
-       <i class='bx bxl-twitter' ></i>
+       <i class='bx bxl-google'id="icon1"></i>
+       <i class='bx bxl-facebook'id="icon2"></i>
+       <i class='bx bxl-instagram-alt'id="icon3"></i>
+       <i class='bx bxl-twitter' id="icon2"></i>
        </div>
     </form>
   
-    <div id="result"></div>
+    <!-- <div id="result"></div> -->
+    <div id="table1" class="mb-5 ">
+    <table class="table table-bordered">
+        <h3>User Details</h3>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+       <tbody id="table2"></tbody>
+    </table>
+    </div>
 </div>
     
 </body>
