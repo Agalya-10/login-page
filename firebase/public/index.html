@@ -32,19 +32,35 @@
             </div>
             <div id="emailError"></div>
         </div>
+
         <div class="input-type ">
             <label for="password">Password</label>
             <div class="insert-icon" >
-                <i class='bx bxs-virus-block'></i>
+                <i class='bx bxs-lock'></i>
+                <span class="toggle-eye"  onclick="togglePassword(this)">🔒</span>
             <input type="password" class="shadow" placeholder="Enter your Password" name="password" id="password">
             </div>
+            <div id="passwordError"></div>
+            </div>
+
+        <div class="input-type ">
+
+            <label for="cpassword">Confirm Password</label>
+            <div class="insert-icon" >
+              
+                <i class='bx bxs-lock'></i>
+                <span class="toggle-eye " onclick="togglePassword(this)">🔒</span>
+
+            <input type="password" class="shadow" placeholder="Enter your Confirm Password" name="cpassword" id="cpassword">
+
+            </div>
+            <div id="cpasswordError"></div>
             <div class="password1">
             <input type="radio" style="font-size: 0px;" class="pass1">Remember me
             <a class="pass" href="">Reset Password!</a>
             </div>
-            <div id="passwordError"></div>
-        </div>
-       <button class="submit" onclick="MyButton(event)">Login</button><br>
+                </div>
+       <button class="submit" onclick="MyButton(event)">Register</button><br>
        <div class="d-flex justify-content-center">
         <div class="line mt-4" style="width: 100%; max-width:8rem;height: 0%; border: 0.2px solid;border-radius: 4px;color: rgb(194, 189, 189)"></div>
         <p class=" mx-2 mt-2" >or</p>
@@ -67,6 +83,7 @@
                 <th>Username</th>
                 <th>Email</th>
                 <th>Password</th>
+                <th>Confirm password</th>
                 <th>Action</th>
             </tr>
         </thead>

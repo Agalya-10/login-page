@@ -9,7 +9,7 @@ body{
 #form{
     background-color:white;
     width: 400px;
-    margin: 3vh auto;
+    margin: 1vh auto;
     /* background: linear-gradient(40deg, pink,skyblue); */
 
 }
@@ -102,9 +102,26 @@ body{
     transform: translateY(-50%);
     color:hsl(340, 97%, 45%); 
 }
+/* .insert-icon span {
+    position: absolute;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color:hsl(340, 97%, 45%); 
+} */
 
 .insert-icon input {
     padding-left: 30px; 
+}
+.toggle-eye{
+    /* margin-left: 285px; */
+    margin-bottom: 15px;
+    position: absolute;
+}
+.toggle-eye{
+    /* padding-left: 285px; */
+    margin-bottom: 15px;
+    position: absolute;
 }
 .table1{
     display: flex;
@@ -117,10 +134,7 @@ table,td,tr,th{
 }
 th{
     padding: 1rem 2rem;
-    /* text-align: center; */
 
 }
-td{
-    /* text-align: center; */
-}
+
 
