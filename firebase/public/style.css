@@ -102,13 +102,7 @@ body{
     transform: translateY(-50%);
     color:hsl(340, 97%, 45%); 
 }
-/* .insert-icon span {
-    position: absolute;
-    left: 15px; 
-    top: 50%;
-    transform: translateY(-50%);
-    color:hsl(340, 97%, 45%); 
-} */
+
 
 .insert-icon input {
     padding-left: 30px; 
